@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>To Do List</title>
+    <link href="todostyle.css"/ rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1>TO DO LIST</h1>
+        <button id="adding">+ Add New Task</button>
+    </div>
+
+   
+    <div class="taskList" id="taskList"> 
+        <div class="taskHeader">
+            <table>
+                <tr>
+                    <th>TITLE</th>
+                    <th>DESCRIPTION</th>
+                    <th>PRIORITY</th>
+                    <th>STATUS</th>
+                    <th>ACTION</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="taskAdded">
+        <form action="todolist.html" class="form" id="taskForm">
+            <fieldset id="todolist">
+                <legend>NEW TASK</legend>
+                <button id="close" type="button"><span>&times;</span></button>
+                <br/>
+                
+                <label for="title">TITLE</label>
+                <input type="text" id="title" placeholder="Enter the title"/>
+                
+                <br/><br/>
+
+                <label for="desc">Description</label>
+                <input type="text" id="desc" placeholder="Enter the description"/>
+
+                <br/><br/>
+
+                <div class="prior">Priority
+                <input type="radio" name="priority" id="high" value="High" checked/>
+                <label for="high">High</label>
+
+                <input type="radio" name="priority" id="medium" value="Medium"/>
+                <label for="medium">Medium</label>
+
+                <input type="radio" name="priority" id="low" value="Low"/>
+                <label for="low">Low</label></div>
+
+                <button type="submit" id="submit">ADD</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="todoscript.js"></script>
+
+</body>
+
+</html>

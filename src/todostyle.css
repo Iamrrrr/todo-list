@@ -1,0 +1,196 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif; 
+    max-width: 100%;
+    background-image: linear-gradient(to right bottom, #eebed9, #e7c2e2, #dfc7ea, #d6cbef, #ced0f3, #c8d5f6, #c2daf7, #bfdef6, #bde3f5, #bee8f3, #c2ecf0, #c8f0ed);
+    background-repeat: no-repeat;
+    background-size: 1900px 1900px;
+}
+
+.header{
+    padding: 30px;
+    width: 95%;
+    margin: 10px;
+}
+
+.header h1{
+    font-weight:bolder;
+    font-size:50px;
+    text-align: center; 
+    color: black;
+}
+
+.header #adding{
+   margin-left: 39%;
+    text-align: center;
+    background-color:lavender;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 320px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 6px black; 
+}
+
+.header button:hover{
+    background-color:#bdb1da;
+}
+
+
+.form{
+    width: 45%;
+    margin: 0px 100px 0px 400px;
+    background: rgba(255,255,255,0.95);
+    opacity: 0;
+    top: 40%;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+    transform: scale(0.5);
+    transition: all 1s;
+}
+
+
+
+#taskForm.active{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+fieldset{
+    padding-left: 100px;
+    
+}
+
+legend{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.form input{
+    border-radius: 10px;
+    height: 20px;
+    margin: 5px;
+    text-align:center ;  
+}
+
+
+label,.prior {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#title{
+    margin-left: 102px;
+}
+
+#desc{
+    margin-left: 50px;
+}
+
+#close{
+    margin-left: 500px;
+    font-weight: bold;
+    font-size: 35px;
+    color: red;
+    background-color: transparent;
+    border: none;
+}
+
+#submit{
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    margin: 10px 0px;
+    font-weight: bold;
+    color: white;
+    background-color:cadetblue;
+    transition: all 0.5s;
+}
+
+#submit:hover{
+    background-color:#b7ede9;
+}
+
+#taskList .tasks{
+    background-color: black;
+    width: 80%;
+    height: 60px;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content:space-around;
+    border-radius: 20px;
+}
+
+
+ .content,.edit,.delete,.description,.priorities,.status{
+    position: relative;
+    margin-top: 18px;
+    display: inline-block;
+} 
+
+.tasks input[type='text']{
+    appearance: none;
+    background: none;
+    outline: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+}
+
+
+
+#taskList .tasks .edit,#taskList .tasks .delete{
+    background-color: transparent;
+    color:cyan;
+    font-weight: bold;
+    font-size:medium;
+    cursor: pointer;
+    border: none;
+    opacity: 0.6;
+    transition: 1s;
+}
+
+#taskList .tasks .edit:hover,#taskList .tasks .delete:hover{
+    opacity: 1;
+}
+
+
+.status input[type="text"]{
+    color: red;
+}
+
+.status .statustext.activeStatus {
+    color: greenyellow;
+}
+
+table{
+    margin-left: 10%;
+    margin-bottom: 20px;
+    height: 80px;
+    width:80%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    background-color:black;
+    color: white;
+}
+
+th{
+    padding: 30px;
+}
+
+
+
+
+
+
